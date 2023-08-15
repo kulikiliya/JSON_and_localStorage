@@ -12,7 +12,6 @@ const formData = {};
 function onInputData(el) {
     formData[el.target.name] = el.target.value;
     localStorage.setItem('feedback-form-state', JSON.stringify(formData));
-    console.log(formData);
 }
 
 function onSubmitForm(el) {
